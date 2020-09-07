@@ -1,0 +1,160 @@
+.product {
+  background-color: $white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &_image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  &_category {
+    color: $gray-500;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+  &_title {
+    color: $black;
+    font-weight: 500;
+    height: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  &_price {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  &_price_old{
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: $gray-500;
+    text-decoration: line-through;
+  }
+  &_link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='30' height='30' fill='%2379C5C0'/%3e%3cline x1='14.5' y1='8' x2='14.5' y2='23' stroke='white'/%3e%3cline x1='7' y1='15.5' x2='22' y2='15.5' stroke='white'/%3e%3c/svg%3e");
+    transition: $transition-base;
+  }
+  &_link:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='30' height='30' fill='%23295754'/%3e%3cline x1='14.5' y1='8' x2='14.5' y2='23' stroke='white'/%3e%3cline x1='7' y1='15.5' x2='22' y2='15.5' stroke='white'/%3e%3c/svg%3e");
+  }
+  &_discount{
+    position: absolute;
+    top:-16px;
+    right: -16px;
+    z-index: 1000;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background-image: url(../img/icons/discount.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &_new{
+    position: absolute;
+    top:-16px;
+    right: -16px;
+    z-index: 1000;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    background-image: url(../img/icons/new.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &_hit{
+    position: absolute;
+    top:-16px;
+    right: -16px;
+    z-index: 1000;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background-image: url(../img/icons/hit.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.sort {
+  .input-group {
+    .custom-select {
+      background: #fff url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 9L9.99999 18L19 9' stroke='%2379C5C0'/%3e%3c/svg%3e") no-repeat right 0.75rem center/20px 19px;
+      cursor: pointer;
+
+      option {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.aside {
+  padding: 28px;
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .category-list {
+    list-style: none;
+    padding: 0;
+    li{
+      position: relative;
+      a {
+        font-size: 1.125rem;
+        line-height: 1.2;
+        color: #000;
+        display: inline-block;
+        margin-bottom: 1rem;
+        &:hover {
+          color: $dark;
+        }
+      }
+      &.active a{
+        color: $primary;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 34px;
+        height: 34px;
+        transition: $transition-base;
+        &.collapsed {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    &_second {
+      list-style: none;
+      padding-left: 1rem;
+      li{
+        a {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

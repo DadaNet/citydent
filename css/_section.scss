@@ -1,0 +1,344 @@
+.brands-top {
+  height: 24px;
+  text-align: center;
+  a {
+    display: inline-block;
+    height: 100%;
+    margin: 0 25px;
+  }
+}
+
+
+.logo {
+  &_img{
+    display: block;
+    height: 46px;
+  }
+}
+.search {
+  input {
+    font-size: 0.875rem;
+  }
+
+  button {
+    top: 0;
+    right: 0;
+    line-height: 1.26rem;
+  }
+}
+
+.tel {
+  &_num {
+    color: $black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: $transition-base;
+
+    & img {
+      width: 23px;
+    }
+  }
+  &_contact-us{
+    border-bottom: 1px solid $dark;
+    display: inline-block;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: $transition-base;
+    &:hover {
+      border-bottom: 1px solid $primary;
+    }
+  }
+  &_social {
+    a{
+      width: 30px;
+      height: 30px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.wr-nav {
+  background-color: rgba($primary, .9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .navbar-brand {
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 0.55rem 1rem;
+    transition: $transition-base;
+    &:hover {
+      background-color: rgba($gray-100, .5);
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 1rem;
+      position: relative;
+      transition: $transition-base;
+      &:hover {
+        background-color: rgba($gray-100, .5);
+      }
+      &:after {
+        content: "";
+        display: block;
+        height: 1rem;
+        width: 1px;
+        background-color: rgba($dark, .5);
+        position: absolute;
+        top: calc(50% - 0.5rem);
+        right: 0;
+      }
+    }
+
+    & .nav-item:last-child .nav-link:after{
+      display: none;
+    }
+  }
+}
+
+section{
+  padding: 4rem 0;
+}
+
+.wr-plitka {
+  background-image: url("../img/plitka.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .plitka{
+    padding: 2rem 10rem 2rem 2rem;
+    -webkit-background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &.plitka_01{
+      background-image: url("../img/main-01.jpg");
+      height: 328px;
+    }
+    &.plitka_02{
+      background-image: url("../img/main-02.jpg");
+      height: 328px;
+
+    }
+    &.plitka_03{
+      background-image: url("../img/main-03.jpg");
+    }
+    &.plitka_04{
+      background-image: url("../img/main-04.jpg");
+    }
+
+    a {
+      color: $white;
+      display: inline-block;
+      transition: $transition-base;
+      &:hover {
+        opacity: 0.75;
+        text-decoration: underline;
+      }
+    }
+
+    h2 a{
+      margin-bottom: 2rem;
+    }
+
+    li {
+      list-style: none;
+      line-height: 2;
+    }
+
+    li:before {
+      content:  "—";
+      position: relative;
+      left:     -5px;
+      color: $white;
+    }
+  }
+}
+
+.title {
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 0;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 30px;
+    display: block;
+    background-color: $primary;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(-100% - 30px);
+  }
+}
+.bg-primary .title:before {
+  background-color: $white;
+}
+
+.wr-special{
+  .special_link {
+    position: absolute;
+    top: 1.75rem;
+    right: 0;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: $black;
+    text-decoration: underline;
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
+.wr-advantages {
+  img {
+    width: 85px;
+    height: 85px;
+  }
+  p {
+    color: $white;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-left: 1rem;
+
+  }
+}
+
+.brand {
+  &_link {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $black;
+    &:hover {
+      color: $dark;
+    }
+  }
+  &_country {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    img {
+      width: 24px;
+      height: 16px;
+      margin-right: .5rem;
+    }
+    p {
+      font-size: 0.875rem;
+      color: $gray-700;
+      margin-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  &_logo {
+    height: 30px;
+  }
+}
+
+.wr-contactus {
+  border-bottom: 1psx solid #F2F2F2;
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    span {
+      color: $primary;
+    }
+  }
+  .contactus_form {
+    input {
+      font-size: 0.875rem;
+      width: 270px;
+      margin: 0 2rem;
+    }
+    .btn {
+      font-size: 1.375rem;
+      padding: 3px 30px;
+      color: $white;
+      font-weight: 500;
+      border: none;
+
+      &:hover {
+        background-color: $dark;
+      }
+    }
+  }
+}
+
+.wr-about {
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+.footer {
+  padding: 3rem 0;
+
+  .logo_img {
+    height: 68px;
+  }
+  .tel_num {
+    font-size: 3rem;
+    img {
+      width: 48px;
+    }
+  }
+  .tel_social {
+    padding: 9px 0;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  
+  .copyright {
+    color: $gray-500;
+  }
+  
+  &_nav {
+    display: flex;
+    list-style: none;
+    a {
+      color: $black;
+      margin-right: 2rem;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
+.breadcrumb {
+  padding: 0 1rem;
+  .breadcrumb-item {
+    align-items: center;
+    a {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      span {
+        border-bottom: 1px solid $dark;
+        line-height: 1.2;
+      }
+    }
+    h1 {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
