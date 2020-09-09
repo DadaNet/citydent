@@ -82,6 +82,7 @@
       transition: $transition-base;
       &:hover {
         background-color: rgba($gray-100, .5);
+        background: linear-gradient(0deg, rgba($gray-100, .4) 0%, rgba($gray-100, .5) 50%, rgba($gray-100, .4) 100%);
       }
       &:after {
         content: "";
@@ -242,7 +243,7 @@ section{
 }
 
 .wr-contactus {
-  border-bottom: 1psx solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
   h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
@@ -321,6 +322,8 @@ section{
     }
   }
 }
+
+
 .breadcrumb {
   padding: 0 1rem;
   .breadcrumb-item {
@@ -335,7 +338,7 @@ section{
         line-height: 1.2;
       }
     }
-    h1 {
+    .h1 {
       font-size: 1rem;
       margin-bottom: 0;
     }

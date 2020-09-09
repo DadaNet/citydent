@@ -1,0 +1,108 @@
+.wr-product-item {
+  margin-bottom: 100px;
+}
+.carousel {
+  .carousel-indicators{
+    position: relative;
+    margin: 1rem auto;
+    li {
+      width: 100px;
+      height: 100px;
+      border: none;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 0 0.5rem;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .carousel-item {
+    height: 390px;
+    background-color: $white;
+    img {
+      //object-fit: contain;
+      height: unset;
+    }
+  }
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11 1.00003L2.00001 10L11 19' stroke='%2379C5C0' stroke-width='2'/%3e%3c/svg%3e ");
+  width: 28px;
+  height: 28px;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 19L18 10L9 1.00003' stroke='%2379C5C0' stroke-width='2'/%3e%3c/svg%3e");
+  width: 28px;
+  height: 28px;
+}
+.item {
+  margin-bottom: 5rem;
+  &_title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  &_price {
+    font-size: 2.125rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+  &_pricedop {
+    color: $gray-700;
+    font-size: 1.5rem;
+  }
+  &_param {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    span {
+      font-weight: 600;
+    }
+    a {
+      border-bottom: 1px solid $dark;
+    }
+    ul {
+      list-style: none;
+      padding-left: 2rem;
+      li {
+        margin-bottom: .75rem;
+      }
+    }
+  }
+
+  &_h2 {
+    color: $primary;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    &:before {
+      content: '';
+      width: 2rem;
+      height: 2rem;
+      display: block;
+      background-color: $primary;
+      margin-right: 1rem;
+    }
+  }
+  &_desc {
+    margin-bottom: 3rem;
+    h3{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      &:before {
+        content: '';
+        width: 1.75rem;
+        height: 1.75rem;
+        display: block;
+        background-color: $primary;
+        margin-right: 1rem;
+      }
+    }
+    img {
+      width: 100%;
+      height: unset;
+    }
+  }
+}
