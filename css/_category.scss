@@ -13,6 +13,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    &:hover {
+      opacity: .6;
+    }
   }
   &_category {
     color: $gray-500;
@@ -60,6 +63,7 @@
     background-image: url(../img/icons/discount.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    z-index: 999;
   }
   &_new{
     position: absolute;
@@ -74,6 +78,7 @@
     background-image: url(../img/icons/new.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    z-index: 999;
   }
   &_hit{
     position: absolute;
@@ -88,6 +93,7 @@
     background-image: url(../img/icons/hit.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    z-index: 999;
   }
 }
 

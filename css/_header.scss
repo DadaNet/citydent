@@ -28,3 +28,15 @@
     }
   }
 }
+.modal-header {
+  background-color: $primary;
+  border: none;
+}
+.modal-body {
+  margin: 1.35rem 2rem;
+  .btn {
+    text-transform: uppercase;
+    border: 1px solid $gray-900;
+    padding: .5rem 3rem;
+  }
+}

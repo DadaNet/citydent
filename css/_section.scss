@@ -5,6 +5,9 @@
     display: inline-block;
     height: 100%;
     margin: 0 25px;
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 
@@ -54,6 +57,9 @@
       width: 30px;
       height: 30px;
       margin-left: 15px;
+      &:hover {
+        opacity: .6;
+      }
     }
   }
 }
@@ -253,13 +259,13 @@ section{
   }
   .contactus_form {
     input {
-      font-size: 0.875rem;
-      width: 270px;
+      width: 380px;
       margin: 0 2rem;
+      font-size: 1.375rem;
     }
     .btn {
       font-size: 1.375rem;
-      padding: 3px 30px;
+      padding: .5rem 3rem;
       color: $white;
       font-weight: 500;
       border: none;
@@ -332,10 +338,9 @@ section{
       img {
         height: 30px;
         width: 30px;
-      }
-      span {
-        border-bottom: 1px solid $dark;
-        line-height: 1.2;
+        &:hover {
+          opacity: .6;
+        }
       }
     }
     .h1 {
